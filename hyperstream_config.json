@@ -1,0 +1,44 @@
+{
+    "mongo": {
+        "host": "ds115573.mlab.com",
+        "port": 15573,
+        "tz_aware": true,
+        "db": "hyperstream",
+        "username": "dbuser",
+        "password": "whatever"
+    },
+    "history_channel": "mongo",
+    "plugins": [{
+        "channel_id_prefix": "example",
+        "channel_names": [],
+        "path": "HyperStream/plugins/example",
+        "has_tools": true,
+        "has_assets": false
+    }, {
+        "channel_id_prefix": "data_importers",
+        "channel_names": [],
+        "path": "HyperStream/plugins/data_importers",
+        "has_tools": true,
+        "has_assets": false
+    }, {
+        "channel_id_prefix": "data_generators",
+        "channel_names": [],
+        "path": "HyperStream/plugins/data_generators",
+        "has_tools": true,
+        "has_assets": false
+    }, {
+        "channel_id_prefix": "online_learning",
+        "channel_names": [],
+        "path": "plugins/online_learning",
+        "has_tools": true,
+        "has_assets": false
+    }],
+    "online_engine": {
+        "interval": {
+            "start": -60,
+            "end": -10
+        },
+        "sleep": 5,
+        "iterations": 100
+    }
+}
